@@ -8,6 +8,8 @@ import router from 'router'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 import firebase from 'firebase'
+import VueRouter from 'vue-router'
+
 const config = {
   apiKey: 'AIzaSyBqyuyv9cLau8z4pv6U_FDJvf2sR11PlDc',
   databaseURL: 'https://progressive-tamvan.firebaseio.com',
@@ -19,6 +21,7 @@ Vue.prototype.$http = axios
 Vue.prototype.$db = firebaseApp.database()
 Vue.use(VueFire)
 Vue.use(VueMaterial)
+Vue.use(VueRouter)
 
 Vue.material.registerTheme({
   default: {
